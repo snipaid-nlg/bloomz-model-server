@@ -62,7 +62,7 @@ def inference(model_inputs:dict) -> dict:
     output = gen_pipe(f"{task_prefix} {document_en} {prompt}")
 
     # Get output text
-    output_text = output[0]['generated_text'].split(prompt)[1].strip().strip("</s>")
+    output_text = output[0]['generated_text'].split(prompt)[1].split("</s>")[0]
 
     # Translate output back to german
     output_text_de = GoogleTranslator(source='auto', target='de').translate(output_text)
