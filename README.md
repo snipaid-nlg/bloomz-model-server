@@ -4,6 +4,10 @@
 This repo provides the code for serving the original bloomz-3b model in production for german snippet generation.
 It can be used to spin up a simple HTTP server, that handles translation and snippet generation.
 
+> _**NOTE:** There is an even faster server for this model, built with the Potassium framework. Please use the Potassium Server for optimal performance._
+> 
+> [![GitHub](https://badgen.net/badge/icon/bloomz%20potassium%20model%20server/orange?icon=github&label)](https://github.com/snipaid-nlg/bloomz-model-server-v2)
+
 ## Quickstart:
 
 Curious to get your hand on a bloomz server capable of german snippet generation?
